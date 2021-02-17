@@ -1,7 +1,13 @@
 function countAllTravels() {
-  const destinations = document.getElementsByTagName("h5");
-  const lastminuteDeals = document.getElementsByTagName("h4");
-  const count = destinations.length + lastminuteDeals.length;
+  const destinations = document.querySelectorAll("#destinations-row h5");
+  const lastminuteDeals = document.querySelectorAll(
+    "#last-minute-row .card .card-body h4"
+  );
+  const welcomeSummerDeals = document.querySelectorAll(
+    "#welcome-summer-row h5"
+  );
+  const count =
+    destinations.length + lastminuteDeals.length + welcomeSummerDeals.length;
   const travelsCount = document.createElement("div");
   const mainContainer = document.getElementById("count-container");
   mainContainer.appendChild(travelsCount);
