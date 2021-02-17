@@ -37,7 +37,7 @@
 
         Ex 7) Make the "Deal of the day" section disappear when the user is mobile
         Ex 8) Add to the Welcome Summer destinations a large shadow
-        Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards
+        Ex 9) Create a secti Last onMinute, in which you'll display the pictures from the destinations as Cards
         Ex 10) Create a "Testimonial" section, in which the user can find several feedback from fake customers
         Ex 11) Create a footer with the company information and a button "contact us"
 

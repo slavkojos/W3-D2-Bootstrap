@@ -37,8 +37,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active text-white" href="#dealoftheweek"
-            >Deal of the Week <span class="sr-only">(current)</span></a
+          <a class="nav-link active text-white" href="#destinations"
+            >Destinations <span class="sr-only">(current)</span></a
           >
           <a class="nav-link text-white" href="#welcomesummer"
             >Welcome Summer</a
@@ -50,7 +50,8 @@
       </div>
     </nav>
 
-    <section class="container w">
+    <section id="main" class="container">
+      <div id="count-container" class="my-2"></div>
       <section class="jumbotron jumbotron-fluid my-3 bg-info">
         <div class="container">
           <h1 class="display-4">We have best meal for all the people</h1>
@@ -60,12 +61,14 @@
         </div>
       </section>
 
-      <div id="destinations my-3">
-        <div id="section-header">
+      <div id="destinations" class="my-3">
+        <div id="section-header " class="d-flex justify-content-between my-2">
           <h2>Destinations</h2>
-          <hr />
+          <a class="btn btn-primary" data-toggle="collapse" href="#destinations-row" role="button" aria-expanded="true" aria-controls="destinations-row">
+            Collapse
+          </a>
         </div>
-        <div class="row">
+        <div id="destinations-row" class="row collapse show">
           <div class="col col-6 col-md-4 col-lg-3">
             <img
               class="img-thumbnail"
@@ -103,15 +106,17 @@
 
       <!-- welcome summer -->
 
-      <section id="welcomesummer">
-        <div class="section-header">
-          <h2>Welcome Summer</h2>
-          <hr />
+      <section id="welcomesummer" class="my-3">
+        <div id="section-header " class="d-flex justify-content-between my-2">
+          <h2>Welcome summer</h2>
+          <a class="btn btn-primary" data-toggle="collapse" href="#welcome-summer-row" role="button" aria-expanded="true" aria-controls="welcome-summer-row">
+            Collapse
+          </a>
         </div>
-        <div class="row">
+        <div id="welcome-summer-row" class="row collpase show">
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/14-Corfu.png"
               alt=""
             />
@@ -119,7 +124,7 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/15-Crete.png"
               alt=""
             />
@@ -127,7 +132,7 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/16-Mykonos.png"
               alt=""
             />
@@ -135,7 +140,7 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/orlando-brooke-425487-unsplash-1.jpg"
               alt=""
             />
@@ -143,7 +148,7 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/17-paros.png"
               alt=""
             />
@@ -151,7 +156,7 @@
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img
-              class="img-thumbnail"
+              class="img-thumbnail shadow-lg"
               src="https://www.oliverstravels.com/blog/wp-content/uploads/2018/05/18-Rhodes.png"
               alt=""
             />
@@ -163,7 +168,7 @@
       Ex 6) Implement a "Deal of the day" section. In this section you'll have:
       - 66% of the page with a picture of the destination
       - 33% with Name, dates, price and a short description -->
-    <div id="dealoftheday"  class= "d-none d-lg-block">
+    <div id="dealoftheday"  class= "d-none d-lg-block my-3">
       <div class="section-header">
         <h2>
           Deal of the Day
@@ -196,8 +201,126 @@
 
 
     </div>
+
+  <!-- --------------------------------------LAST MINUTE---------------------------------------------- -->
+  <section id="lastminute">
+    <div class="section-header">
+      <h2>Last minute</h2>
+      <hr>
+    </div>
+    <div id="last-minute-row" class="row">
+      <div class="card col col-12 col-md-6 col-lg-4 p-0">
+        <img src="https://i1.wp.com/reporterontheroad.com/wp-content/uploads/voyage-a-rome-cover.png?fit=1170%2C780&ssl=1" class="img-fluid w-100 h-auto" alt="...">
+        <div class="card-body">
+          <h4 class="card-text font-weight-bold text-center">ROME</h4>
+        </div>
+      </div>
+      <div class="card col col-12 col-md-6 col-lg-4 p-0">
+        <img src="https://cdn.kimkim.com/files/a/images/25fc2f2388e11705eee16483159d69cd99d28d5e/big-cde1af81dad6218558d2b9fb92dec233.jpg" class="img-fluid w-100 h-auto" alt="...">
+        <div class="card-body">
+          <h4 class="card-text font-weight-bold text-center">IBIZA</h4>
+        </div>
+      </div>
+      <div class="card col col-12 col-md-6 col-lg-4 p-0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQPlF5CqftzUcyGPgW4Mo21QoqZHYu25k2FA&usqp=CAU" class="img-fluid w-100 h-auto" alt="...">
+        <div class="card-body">
+          <h4 class="card-text font-weight-bold text-center">PARIS</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="my-3">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <hr>
+    </div>
+    <div class="row px-2">
+      <div class="card mb-3 col col-12 col-md-6 col-lg-4 p-0" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Max</h5>
+              <p class="card-text">I really enjoy going traveling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col col-12 col-md-6 col-lg-4 p-0" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Hans</h5>
+              <p class="card-text">I think I will remember this for the rest of my life</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col col-12 col-md-6 col-lg-4 p-0" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Sebastian</h5>
+              <p class="card-text">Great experience!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+        
+    </div>
+  </section>
+
+
+  <!-- ----------------------------------------FOOTER------------------------------------------------- -->
+</section>
+  <footer class="bg-secondary text-center py-5">
+    <h3 class="font-weight-bold my-3">Traveling agency</h3>
+    <p class="font-italic">We take care of your traveling needs</p>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#contactForm"  role="button">Contact Us</button>
+
+    <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
     
-    </section>
+    
 
 
     <script
@@ -210,5 +333,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
