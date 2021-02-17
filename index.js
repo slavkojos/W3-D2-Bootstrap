@@ -13,7 +13,7 @@ function countAllTravels() {
   mainContainer.appendChild(travelsCount);
   travelsCount.classList.add("alert", "alert-primary");
   travelsCount.setAttribute("role", "alert");
-  travelsCount.innerText = `We have currently ${count} destinations in our offer`;
+  travelsCount.innerText = `We currently have ${count} destinations in our offer`;
 }
 
 window.onload = countAllTravels();
